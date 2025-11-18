@@ -1,0 +1,74 @@
+--- RPART - Reglas con Top 33% ---
+|--- CGPA <= 8.73
+|   |--- TOEFL Score <= 106.50
+|   |   |--- CGPA <= 8.44
+|   |   |   |--- class: 0
+|   |   |--- CGPA >  8.44
+|   |   |   |--- class: 0
+|   |--- TOEFL Score >  106.50
+|   |   |--- GRE Score <= 318.50
+|   |   |   |--- class: 0
+|   |   |--- GRE Score >  318.50
+|   |   |   |--- class: 0
+|--- CGPA >  8.73
+|   |--- GRE Score <= 319.50
+|   |   |--- GRE Score <= 315.00
+|   |   |   |--- class: 1
+|   |   |--- GRE Score >  315.00
+|   |   |   |--- class: 0
+|   |--- GRE Score >  319.50
+|   |   |--- CGPA <= 9.06
+|   |   |   |--- class: 1
+|   |   |--- CGPA >  9.06
+|   |   |   |--- class: 1
+
+
+--- RPART - Reglas con Top 66% ---
+|--- CGPA <= 8.73
+|   |--- TOEFL Score <= 106.50
+|   |   |--- SOP <= 3.75
+|   |   |   |--- class: 0
+|   |   |--- SOP >  3.75
+|   |   |   |--- class: 0
+|   |--- TOEFL Score >  106.50
+|   |   |--- GRE Score <= 318.50
+|   |   |   |--- class: 0
+|   |   |--- GRE Score >  318.50
+|   |   |   |--- class: 0
+|--- CGPA >  8.73
+|   |--- GRE Score <= 319.50
+|   |   |--- SOP <= 3.25
+|   |   |   |--- class: 0
+|   |   |--- SOP >  3.25
+|   |   |   |--- class: 1
+|   |--- GRE Score >  319.50
+|   |   |--- SOP <= 3.75
+|   |   |   |--- class: 1
+|   |   |--- SOP >  3.75
+|   |   |   |--- class: 1
+
+
+--- RPART - Reglas con 100% ---
+|--- CGPA <= 8.73
+|   |--- TOEFL Score <= 106.50
+|   |   |--- SOP <= 3.75
+|   |   |   |--- class: 0
+|   |   |--- SOP >  3.75
+|   |   |   |--- class: 0
+|   |--- TOEFL Score >  106.50
+|   |   |--- GRE Score <= 318.50
+|   |   |   |--- class: 0
+|   |   |--- GRE Score >  318.50
+|   |   |   |--- class: 0
+|--- CGPA >  8.73
+|   |--- GRE Score <= 319.50
+|   |   |--- SOP <= 3.25
+|   |   |   |--- class: 0
+|   |   |--- SOP >  3.25
+|   |   |   |--- class: 1
+|   |--- GRE Score >  319.50
+|   |   |--- SOP <= 3.75
+|   |   |   |--- class: 1
+|   |   |--- SOP >  3.75
+|   |   |   |--- class: 1
+
